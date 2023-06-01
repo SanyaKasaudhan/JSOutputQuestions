@@ -77,7 +77,8 @@ Write a code so that arr.print() must return 1,2,3,4 in JS
 
             const arr = [1, 2, 3, 4];
 
-            arr.print(); // Output: 1,2,3,4
+            arr.print(); 
+ // Output: 1,2,3,4
 
             console.log(x);
             var x=3;
@@ -88,3 +89,27 @@ Write a code so that arr.print() must return 1,2,3,4 in JS
 
 undefined
 RE
+
+            let abc = ()=>{
+                console.log(this);
+            }
+            abc();
+
+Output-{}
+
+            function abc() {
+                console.log(this);
+            }
+            abc();
+
+Output - object [global]
+
+            function foo() {
+            let x= ( y=0)
+            x++;
+            y++;
+            return x;
+            }
+            console.log(foo());
+
+Output -1
