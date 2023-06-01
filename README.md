@@ -65,3 +65,26 @@ Output - 10
 ERROR!
  console.log(j)
 ReferenceError: j is not defined
+
+Write a code so that arr.print() must return 1,2,3,4 in JS
+
+            // Add the print method to the Array prototype
+            Array.prototype.print = function() {
+              // Join the elements of the array with commas
+              var result = this.join(',');
+              console.log(result);
+            };
+
+            const arr = [1, 2, 3, 4];
+
+            arr.print(); // Output: 1,2,3,4
+
+            console.log(x);
+            var x=3;
+            console.log(y);
+            const y= 5;
+            console.log(z);
+            let z=8;
+
+undefined
+RE
