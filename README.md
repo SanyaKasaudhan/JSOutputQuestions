@@ -113,3 +113,23 @@ Output - object [global]
             console.log(foo());
 
 Output -1
+
+            function foo(a,b,...c) {
+                console.log(c);
+            }
+            foo(1,2,3,4,5);
+             foo(1,2);
+            
+Output- [3,4,5]
+[]
+
+            const [a,...b,c]= [1,2,3,4;]
+            console.log(a,b,c);
+            
+Output - ErrorRest element must be the last element
+
+            (function x(){
+                var a=b=5;
+            })();
+            console.log(a);
+ReferenceError: a is not defined
