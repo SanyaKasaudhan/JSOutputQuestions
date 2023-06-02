@@ -133,3 +133,19 @@ Output - ErrorRest element must be the last element
             })();
             console.log(a);
 ReferenceError: a is not defined
+
+            let a=[];
+            let b=[];
+            console.log(a==b);
+            console.log(a===b);
+
+Output - false
+false
+
+            let a=[];
+            let b=a;
+            console.log(a==b);
+            console.log(a===b);
+
+Output - true
+true
