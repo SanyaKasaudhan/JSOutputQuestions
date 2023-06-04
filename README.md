@@ -1,4 +1,5 @@
 # JSOutputQuestions
+Javascript
 
       const promise1 = new Promise((resolve, reject) => {
           resolve("3")
