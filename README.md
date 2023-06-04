@@ -150,3 +150,20 @@ false
 
 Output - true
 true
+
+            let a=[1,2,3,4]
+            let b ={name:"san"}
+            consol.log(...a)
+output-1,2,3,4
+
+            let a= 20 - - 30
+            consolg.log(a);
+Output - 40
+
+            let a={nam: " sanya"}
+            console.log(delete a.nam);
+Output- true
+
+            let a={nam: " sanya"}
+            console.log(delete a);
+Output- false // we can't delete object we can only delete its ppties
