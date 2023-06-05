@@ -167,3 +167,14 @@ Output- true
             let a={nam: " sanya"}
             console.log(delete a);
 Output- false // we can't delete object we can only delete its ppties
+
+            const a =["san", "kas", "tan"];
+            const [b]= a;
+            console.log(a);
+Output - san
+
+How to get ppty without . operator
+             const data={name:"san", age:24};
+             const {name} = data;
+             console.log(name)
+ Output - san
