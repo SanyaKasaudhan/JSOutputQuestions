@@ -178,3 +178,17 @@ How to get ppty without . operator
              const {name} = data;
              console.log(name)
  Output - san
+
+             obj1={a:10};
+             const obj2=obj1;
+             obj1.a=20;
+             console.log(obj1,"2",obj2);
+             let obj1;
+Output- ReferenceError: Cannot access 'obj1' before initialization
+
+             obj1={a:10};
+             const obj2=obj1;
+             obj1.a=20;
+             console.log(obj1,"2",obj2);
+             var obj1;
+Output -{ a: 20 } 2 { a: 20 }
