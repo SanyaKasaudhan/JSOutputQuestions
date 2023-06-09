@@ -1,4 +1,4 @@
-# JSOutputQuestions
+# JS Output Questions
 Javascript  MCQ
 
       const promise1 = new Promise((resolve, reject) => {
