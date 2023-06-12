@@ -1,6 +1,36 @@
 # JS Output Questions
 Javascript  MCQ
 
+To flatten an array in JavaScript without using the `flat()` method, you can use a recursive function. Here's an example of how you can do it:
+
+```javascript
+let flat = [1, [2, 3, 4], 3];
+
+function flattenArray(arr) {
+  let result = [];
+
+  arr.forEach((item) => {
+    if (Array.isArray(item)) {
+      result = result.concat(flattenArray(item));
+    } else {
+      result.push(item);
+    }
+  });
+
+  return result;
+}
+
+let flattened = flattenArray(flat);
+console.log(flattened);
+```
+
+Output:
+```
+[1, 2, 3, 4, 3]
+```
+
+In this code, the `flattenArray()` function takes an array as input and iterates over each element. If an element is an array, it recursively calls the `flattenArray()` function on that sub-array and concatenates the result with the current `result` array. If an element is not an array, it simply pushes it to the `result` array. Finally, the function returns the flattened array.
+
       const promise1 = new Promise((resolve, reject) => {
           resolve("3")
        })
