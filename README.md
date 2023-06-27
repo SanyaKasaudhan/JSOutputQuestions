@@ -1,4 +1,5 @@
 # JS Output Questions
+
 Javascript  MCQ 
 To flatten an array in JavaScript without using the `flat()` method, you can use a recursive function. Here's an example of how you can do it:
 
